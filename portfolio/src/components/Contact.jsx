@@ -12,6 +12,8 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
 
   const formRef = useRef();
+  const [message, setMessage] = useState( false);
+  const [error, setError] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -40,20 +42,43 @@ const Contact = () => {
         },
         'aBjfc5O5oyXi2kAC4'
     )
-        .then(() => {
-          setLoading(false);
-          alert('Thank You, I will get back to you ASAP.');
+        // .then(() => {
+        //   setLoading(false);
+        //   alert('Thank You, I will get back to you ASAP.');
+        //
+        //   setForm({
+        //     name: '',
+        //     email: '',
+        //     message: '',
+        //   })
+        // }, (error) => {
+        //   setLoading(error);
+        //   alert('email not sent!')
+        // })
 
-          setForm({
-            name: '',
-            email: '',
-            message: '',
-          })
-        }, (error) => {
-          setLoading(error);
-          alert('email not sent!')
-        })
-  }
+        .then(
+            (message) => {
+                setLoading(false);
+                message?.status === 200 && showSuccess();
+
+                setForm({
+                        name: '',
+                        email: '',
+                        message: '',
+                        })
+            },
+            (error) => {
+                setLoading(error);
+                setError(true);
+            }
+        )
+        e.target.reset();
+  };
+
+  const showSuccess = () => {
+      setMessage(true);
+      setTimeout(()=> setMessage(false), 3000);
+  };
 
 
   return (
@@ -73,19 +98,21 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4"> Your Name </span>
             <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary
-              text-white rounded-lg outline-none border-none font-medium"
-            />
+                required
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="Enter your name"
+                  className="bg-tertiary py-4 px-6 placeholder:text-secondary
+                  text-white rounded-lg outline-none border-none font-medium"
+                />
           </label>
 
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4"> Your Email </span>
             <input
+                required
                 type="email"
                 name="email"
                 value={form.email}
@@ -99,6 +126,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4"> Your Message </span>
             <textarea
+                required
                 rows="7"
                 name="message"
                 value={form.message}
@@ -114,6 +142,7 @@ const Contact = () => {
           font-bold shadow-md shadow-primary rounded-xl" >
             {loading ? 'sending...' : 'send'}
           </button>
+            {message && <p className=" text-white "> Message sent. I will respond soon </p>}
 
         </form>
       </motion.div>
