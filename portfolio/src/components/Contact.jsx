@@ -86,7 +86,27 @@ const Contact = () => {
       <motion.div
       variants={slideIn('left', "tween", 0.2,1)}
       className="flex-[0.75] bg-black-100 p-8 rounded-2xl" >
-        <p className={styles.sectionSubText}>Get in touch</p>
+          <p className={styles.sectionSubText}><b className="text-[22px]">Get in touch</b> </p>
+          <p>
+            <span >
+                <b className={styles.sectionSubText}
+                  >Phone: </b> 604 753 7715
+          </span>
+          </p>
+          <p>
+            <span >
+                <b className={styles.sectionSubText}>Email: </b> olusolaadelabu89@gmail.com
+            </span>
+          </p>
+            <p>
+                <span>
+                <a href="https://www.linkedin.com/in/olusolaweb" target="_blank">
+                  <b className={styles.sectionSubText}>Linkedin: </b> linkedin.com/in/olusolaweb
+                </a>
+                </span>
+            </p>
+
+
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
 
@@ -140,7 +160,7 @@ const Contact = () => {
           <button type="submit" className=" bg -tertiary py-3 px-8
           outline-none w-fit text-white
           font-bold shadow-md shadow-primary rounded-xl" >
-            {loading ? 'sending...' : 'send'}
+            {loading ? 'Sending...' : 'Send'}
           </button>
             {message && <p className=" text-white "> Message sent. I will respond soon </p>}
 
