@@ -41,9 +41,9 @@ const About = () => {
 
       <motion.p variants={fadeIn("", "", 0.1, 1)}
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          I am an experienced web developer and designer with skills in JavaScript,
+          I'm an experienced web developer and designer with skills in JavaScript,
           TypeScript, UX UI Designs, and proficiency in frameworks such as React,
-          Node.js, and Three.js. I am a fast learner and work closely with clients
+          Node.js, and Three.js. My fast learning abilities makes me to easily work closely with clients
           to develop efficient, scalable, and user-friendly solutions that address
           real-world problems. Let's collaborate to bring your ideas to fruition!
           In my free time, I enjoy dancing Urbankizz, Kizomba, working out in the gym,

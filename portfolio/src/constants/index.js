@@ -17,6 +17,9 @@ import {
     docker,
     meta,
     starbucks,
+    smatched,
+    triplea,
+    Freelancer,
     tesla,
     shopify,
     carrent,
@@ -47,12 +50,12 @@ const services = [
         icon: web,
     },
     {
-        title: "UX | UI Designer",
-        icon: mobile,
-    },
-    {
         title: "Backend Developer",
         icon: backend,
+    },
+    {
+        title: "UX | UI Designer",
+        icon: mobile,
     },
     {
         title: "Content Creator",
@@ -117,83 +120,85 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Web Developer (React.js)",
+        company_name: "Smatched",
+        icon: smatched,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "Sept 2023 - Nov 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed visually appealing and user-friendly responsive website pages for desktop, iOS, and Android using React.js and other related technologies..",
+            "Collaborated with web developers and UX|UI designers to ensure seamless project integration.",
+            "Outline, design, modify, integrate, and test website code.",
+            "Efficiently handled complex projects and tasks, with a fast approach.",
+            "Presented completed projects to team members in an easy-to-understand manner.",
+            "Strong problem-solving and analytical skills with excellent English communication and teamwork abilities.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Website Designer (HTML5, CSS3 & SASS)",
+        company_name: "Triple-A Global Tech",
+        icon: triplea,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "August 2021 - July 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Created websites and offered both internal and external support to clients throughout website construction and launch phases.",
+            "Constructed codes for website layouts, structures, and meeting project deadlines.",
+            "Efficiently handled complex projects and tasks, with a fast approach.",
+            "Organized and structured the content to guide visitors through the various sections of websites.",
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "UX | UI Designer",
+        company_name: "Freelancer",
+        icon: Freelancer,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        date: "June 2020 - March 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conducted competitive analysis, user interviews, surveys, and A/B and preference testing to gather invaluable research data and develop personas, user flows, and sitemaps.",
+            "Applied the Design-Thinking process to brainstorm and create solutions for apps.",
+            "Implemented responsive design and ensured cross-browser compatibility.",
+            "Designed a feature to address users' specific needs and improve the overall user experience.",
         ],
     },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    // {
+    //     title: "Full stack Developer",
+    //     company_name: "Meta",
+    //     icon: meta,
+    //     iconBg: "#E6DEDD",
+    //     date: "Jan 2023 - Present",
+    //     points: [
+    //         "Developing and maintaining web applications using React.js and other related technologies.",
+    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
 ];
 
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Olusola is a problem solver, he has a particular aptitude for a fast moving team culture that relies on getting projects done through collaboration. ",
+        name: "Brad",
+        designation: "CMO",
+        company: "Smatched",
+        image: "https://media.licdn.com/dms/image/C4D03AQGwAfYdrivPdw/profile-displayphoto-shrink_800_800/0/1549899819078?e=1710374400&v=beta&t=6dxUIlvaNMsUvlbBSE9Mqm9ImwW2Ns8bF2lHEkwelwg",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+            "I am impressed by Olusola's professionalism and ability to work fast and efficiently on websites. He handled all his tasks with excellence.",
+        name: "Davi",
+        designation: "Development TL",
+        company: "Smatched",
+        image: "https://media.licdn.com/dms/image/C5603AQEiZSx2V6l1Lg/profile-displayphoto-shrink_800_800/0/1516956227719?e=1710374400&v=beta&t=GIS_T3vltfoNHUGFDKpRuX-6z5AX7NEyKaWNOiPxso0",
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Olusola is relentlessly eager to learn new technologies to enhance successful projects and tasks with a swift approach. ",
+        name: "Ayobami",
+        designation: "MGR",
+        company: "Triple-A Global Tech",
+        image: "https://media.licdn.com/dms/image/D4E03AQGUMDqsIN5_PQ/profile-displayphoto-shrink_800_800/0/1703040470586?e=1710374400&v=beta&t=uVC8Es1rI8f7bQ1xQhSAQH_ycy3DNMvWhR4vePejesE",
     },
 ];
 
@@ -220,7 +225,7 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "Job IT",
+        name: "AI Voice Assistance News",
         description:
             "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
         tags: [
@@ -241,7 +246,71 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "Trip Guide",
+        name: "Intuitive Game",
+        description:
+            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+
+    {
+        name: "Admin Backend",
+        description:
+            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: carrent,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Chat Messenger",
+        description:
+            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "restapi",
+                color: "green-text-gradient",
+            },
+            {
+                name: "scss",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: jobit,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "UI Design",
         description:
             "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
         tags: [
